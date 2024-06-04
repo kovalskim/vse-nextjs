@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .form-field {
+        @apply rounded-md border border-gray-400 px-3 py-1.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 mt-2;
+    }
+
+    .btn {
+        @apply rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 mt-2;
+    }
+
+    .nav-item {
+        @apply text-center block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white;
+    }
+}
